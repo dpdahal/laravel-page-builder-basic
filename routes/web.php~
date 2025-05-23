@@ -9,7 +9,7 @@ Route::get('/', function () {
 
 
 Route::get('/admin', function () {
-    return view('backend.pages.dashboard.index');
+    return view('dashboard');
 });
 
 
