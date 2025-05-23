@@ -1,25 +1,21 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>All Pages</title>
-</head>
-<body>
-    <h1>All Pages</h1>
-    <a href="{{ route('pages.create') }}">+ Create New Page</a>
+@extends('backend.layouts.main')
+@section('content')
+    <div class="container-fluid page-content">
+        <a href="{{ route('pages.create') }}">+ Create New Page</a>
 
-    <ul>
-        @foreach ($pages as $page)
-            <li>
-                <strong>{{ $page->title }}</strong> ({{ $page->slug }})<br>
-                <a href="{{ route('pages.show', $page->slug) }}">View</a> |
-                <a href="{{ route('pages.edit', $page) }}">Edit</a> |
-                <form action="{{ route('pages.destroy', $page) }}" method="POST" style="display:inline">
-                    @csrf
-                    @method('DELETE')
-                    <button type="submit" onclick="return confirm('Delete this page?')">Delete</button>
-                </form>
-            </li>
-        @endforeach
-    </ul>
-</body>
-</html>
+        <ul>
+            @foreach ($pages as $page)
+                <li>
+                    <strong>{{ $page->title }}</strong> ({{ $page->slug }})<br>
+                    <a href="{{ route('pages.show', $page->slug) }}">View</a> |
+                    <a href="{{ route('pages.edit', $page) }}">Edit</a> |
+                    <form action="{{ route('pages.destroy', $page) }}" method="POST" style="display:inline">
+                        @csrf
+                        @method('DELETE')
+                        <button type="submit" onclick="return confirm('Delete this page?')">Delete</button>
+                    </form>
+                </li>
+            @endforeach
+        </ul>
+    </div>
+@endsection

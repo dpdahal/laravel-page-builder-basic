@@ -1,10 +1,8 @@
 @include('backend.layouts.header')
 @include('backend.layouts.aside')
-@include('backend.layouts.top-nav')
 @include('backend.layouts.footer')
 
 @yield('header')
 @yield('aside')
-@yield('top-nav')
 @yield('content')
 @yield('footer')

@@ -1,115 +1,116 @@
-<!-- Sidebar -->
-<nav id="sidebar" class="sidebar">
-    <div class="sidebar-header">
-        <div class="logo-container">
-            <img src="/placeholder.svg?height=40&width=40" alt="Logo" class="logo-icon">
-            <span class="logo-text">Elegance</span>
+@section('aside')
+    <nav id="sidebar" class="sidebar">
+        <div class="sidebar-header">
+            <div class="logo-container">
+                <img src="/placeholder.svg?height=40&width=40" alt="Logo" class="logo-icon">
+                <span class="logo-text">DP CMS</span>
+            </div>
+            <button id="sidebarCollapseBtn" class="d-md-none close-btn">
+                <i class="bi bi-x-lg"></i>
+            </button>
         </div>
-        <button id="sidebarCollapseBtn" class="d-md-none close-btn">
-            <i class="bi bi-x-lg"></i>
-        </button>
-    </div>
 
-    <!-- User Profile -->
-    <div class="user-profile">
-        <div class="user-image">
-            <img src="/placeholder.svg?height=80&width=80" alt="User" class="rounded-circle">
-            <span class="status-indicator online"></span>
+        <!-- User Profile -->
+        <div class="user-profile">
+            <div class="user-image">
+                <img src="/placeholder.svg?height=80&width=80" alt="User" class="rounded-circle">
+                <span class="status-indicator online"></span>
+            </div>
+            <div class="user-info">
+                <h6>Alex Morgan</h6>
+                <span class="user-role">Administrator</span>
+            </div>
         </div>
-        <div class="user-info">
-            <h6>Alex Morgan</h6>
-            <span class="user-role">Administrator</span>
-        </div>
-    </div>
 
-    <!-- Sidebar Menu -->
-    <ul class="sidebar-nav">
-        <li class="nav-item active">
-            <a href="#" class="nav-link">
-                <i class="bi bi-speedometer2"></i>
-                <span>Dashboard</span>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a href="#userSubmenu" data-bs-toggle="collapse" class="nav-link collapsed">
-                <i class="bi bi-people"></i>
-                <span>User Management</span>
-                <i class="bi bi-chevron-down ms-auto"></i>
-            </a>
-            <ul class="collapse nav-submenu" id="userSubmenu">
-                <li><a href="#" class="nav-link">User List</a></li>
-                <li><a href="#" class="nav-link">Add User</a></li>
-                <li><a href="#" class="nav-link">User Roles</a></li>
-            </ul>
-        </li>
-        <li class="nav-item">
-            <a href="#productSubmenu" data-bs-toggle="collapse" class="nav-link collapsed">
-                <i class="bi bi-box-seam"></i>
-                <span>Products</span>
-                <i class="bi bi-chevron-down ms-auto"></i>
-            </a>
-            <ul class="collapse nav-submenu" id="productSubmenu">
-                <li><a href="#" class="nav-link">Product List</a></li>
-                <li><a href="#" class="nav-link">Add Product</a></li>
-                <li><a href="#" class="nav-link">Categories</a></li>
-            </ul>
-        </li>
-        <li class="nav-item">
-            <a href="#" class="nav-link">
-                <i class="bi bi-cart3"></i>
-                <span>Orders</span>
-                <span class="badge rounded-pill bg-primary ms-auto">New</span>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a href="#" class="nav-link">
-                <i class="bi bi-graph-up"></i>
-                <span>Analytics</span>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a href="#" class="nav-link">
-                <i class="bi bi-calendar-event"></i>
-                <span>Calendar</span>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a href="#" class="nav-link">
-                <i class="bi bi-chat-left-dots"></i>
-                <span>Messages</span>
-                <span class="badge rounded-pill bg-danger ms-auto">5</span>
-            </a>
-        </li>
-        <li class="nav-divider"></li>
-        <li class="nav-item">
-            <a href="#" class="nav-link">
-                <i class="bi bi-gear"></i>
-                <span>Settings</span>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a href="#" class="nav-link">
-                <i class="bi bi-question-circle"></i>
-                <span>Help Center</span>
-            </a>
-        </li>
-    </ul>
+        <!-- Sidebar Menu -->
+        <ul class="sidebar-nav">
+            <li class="nav-item active">
+                <a href="#" class="nav-link">
+                    <i class="bi bi-speedometer2"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#userSubmenu" data-bs-toggle="collapse" class="nav-link collapsed">
+                    <i class="bi bi-people"></i>
+                    <span>User Management</span>
+                    <i class="bi bi-chevron-down ms-auto"></i>
+                </a>
+                <ul class="collapse nav-submenu" id="userSubmenu">
+                    <li><a href="#" class="nav-link">User List</a></li>
+                    <li><a href="#" class="nav-link">Add User</a></li>
+                    <li><a href="#" class="nav-link">User Roles</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="#productSubmenu" data-bs-toggle="collapse" class="nav-link collapsed">
+                    <i class="bi bi-box-seam"></i>
+                    <span>Products</span>
+                    <i class="bi bi-chevron-down ms-auto"></i>
+                </a>
+                <ul class="collapse nav-submenu" id="productSubmenu">
+                    <li><a href="#" class="nav-link">Product List</a></li>
+                    <li><a href="#" class="nav-link">Add Product</a></li>
+                    <li><a href="#" class="nav-link">Categories</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <i class="bi bi-cart3"></i>
+                    <span>Orders</span>
+                    <span class="badge rounded-pill bg-primary ms-auto">New</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <i class="bi bi-graph-up"></i>
+                    <span>Analytics</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <i class="bi bi-calendar-event"></i>
+                    <span>Calendar</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <i class="bi bi-chat-left-dots"></i>
+                    <span>Messages</span>
+                    <span class="badge rounded-pill bg-danger ms-auto">5</span>
+                </a>
+            </li>
+            <li class="nav-divider"></li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <i class="bi bi-gear"></i>
+                    <span>Settings</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <i class="bi bi-question-circle"></i>
+                    <span>Help Center</span>
+                </a>
+            </li>
+        </ul>
 
-    <!-- Sidebar Footer -->
-    <div class="sidebar-footer">
-        <div class="d-flex justify-content-between">
-            <a href="#" class="footer-icon" data-bs-toggle="tooltip" title="Settings">
-                <i class="bi bi-gear"></i>
-            </a>
-            <a href="#" class="footer-icon" data-bs-toggle="tooltip" title="Messages">
-                <i class="bi bi-chat-left-dots"></i>
-            </a>
-            <a href="#" class="footer-icon" data-bs-toggle="tooltip" title="Notifications">
-                <i class="bi bi-bell"></i>
-            </a>
-            <a href="#" class="footer-icon" data-bs-toggle="tooltip" title="Logout">
-                <i class="bi bi-box-arrow-right"></i>
-            </a>
+        <!-- Sidebar Footer -->
+        <div class="sidebar-footer">
+            <div class="d-flex justify-content-between">
+                <a href="#" class="footer-icon" data-bs-toggle="tooltip" title="Settings">
+                    <i class="bi bi-gear"></i>
+                </a>
+                <a href="#" class="footer-icon" data-bs-toggle="tooltip" title="Messages">
+                    <i class="bi bi-chat-left-dots"></i>
+                </a>
+                <a href="#" class="footer-icon" data-bs-toggle="tooltip" title="Notifications">
+                    <i class="bi bi-bell"></i>
+                </a>
+                <a href="#" class="footer-icon" data-bs-toggle="tooltip" title="Logout">
+                    <i class="bi bi-box-arrow-right"></i>
+                </a>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
+@endsection

@@ -2,8 +2,7 @@
     <nav id="sidebar" class="sidebar">
         <div class="sidebar-header">
             <div class="logo-container">
-                <img src="/placeholder.svg?height=40&width=40" alt="Logo" class="logo-icon">
-                <span class="logo-text">Elegance</span>
+                <span class="logo-text">DP CMS</span>
             </div>
             <button id="sidebarCollapseBtn" class="d-md-none close-btn">
                 <i class="bi bi-x-lg"></i>

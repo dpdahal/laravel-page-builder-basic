@@ -13,6 +13,6 @@
 </head>
 <body>
 <div class="admin-wrapper">
-
+    <div class="main-content">
 @endsection
 
