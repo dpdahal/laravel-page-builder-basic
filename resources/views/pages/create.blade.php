@@ -3,8 +3,15 @@
     <div class="container-fluid page-content">
         <form method="POST" action="{{ route('pages.store') }}">
             @csrf
-            <input type="text" name="title" placeholder="Page Title" required>
-            <input type="text" name="slug" placeholder="page-slug" required>
+            <div class="form-group mb-2">
+                <label for="name">Name</label>
+                <input type="text" name="title" required class="form-control">
+
+            </div>
+            <div class="form-group mb-2">
+                <label for="name">Slug</label>
+                <input type="text" name="slug" required class="form-control">
+            </div>
 
             <div>
                 <button type="button" class="add-block" data-type="text">Add Text Block</button>
